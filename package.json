@@ -1,0 +1,17 @@
+{
+  "name": "javascript-aesthetics",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "better-assert": "~1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0"
+  },
+  "scripts": {
+    "test": "mocha samples/**/*.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
