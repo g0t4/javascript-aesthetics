@@ -1,8 +1,8 @@
-'use strict';
-
 var assert = require('better-assert');
 
 describe('pluralization', function () {
+  'use strict';
+
   it('how about entry and entryItem?', function () {
 
     var entry = [
