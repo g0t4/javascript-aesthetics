@@ -1,0 +1,12 @@
+{
+  "globals":{
+    "describe": true,
+    "it": true
+  },
+  "rules": {
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  }
+}

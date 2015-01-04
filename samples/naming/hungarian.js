@@ -1,4 +1,4 @@
-describe('hungarian', function () {
-  'use strict';
+describe("hungarian", function () {
+    "use strict";
 
 });
