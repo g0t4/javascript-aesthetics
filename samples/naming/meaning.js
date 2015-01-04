@@ -59,4 +59,17 @@ describe("meaning", function () {
 
     });
 
+    it("sloppy naming", function () {
+
+        var things = [1.00, 2.07, 3.05];
+
+        var result = 0.0;
+        for (var i = 0; i < things.length; i++) {
+            result += things[i];
+        }
+
+        console.log("The total price is: " + result.toFixed(2));
+
+    });
+
 });
