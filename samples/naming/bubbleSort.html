@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>
+    Here's a sample implementation of a bubble sort algorithm in JavaScript:
+</p>
+<pre class="prettyPrint">
+function comparator(a, b) {
+    return a - b;
+}
+
+function bubSrt(arr, cmp) {
+    cmp = cmp || comparator;
+    var temp;
+    for (var i = 0; i < arr.length; i += 1) {
+        for (var j = i; j > 0; j -= 1) {
+            if (cmp(arr[j], arr[j - 1]) < 0) {
+                temp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+bubSrt([4, 6, 2, 10, 1]);
+
+</pre>
+<p>
+    You can access this sample online, in a web based editor where you can make
+    changes and save them, use this link to access the sample: <a
+        href="http://repl.it/7yL" target="_blank" class="external-link"
+        rel="nofollow">http://repl.it/7yL</a>
+</p>
+
+<p>
+    Take some time, read up on what the bubble sort algorithm does, here's a
+    link to the wikipedia page: <a
+        href="http://en.wikipedia.org/wiki/Bubble_sort" target="_blank"
+        class="external-link" rel="nofollow">http://en.wikipedia.org/wiki/Bubble_sort</a>
+</p>
+
+<p>
+    And then use the techniques discussed in this module and see what changes
+    you might make to enhance your understanding of the code and help others
+    understand it too. There's no right answer, just see what you might change.
+</p>
+
+<p>
+    Under what conditions might you leave the code as is?
+</p>
+
+<p>
+    Then, when you are done, if you are curious, watch the following clip for
+    the changes I decided to make.
+</p>
+
+<p>
+    By the way, this example is based on the following implementation: <a
+        href="https://github.com/mgechev/javascript-algorithms/blob/master/src/sorting/bubblesort.js"
+        target="_blank" class="external-link" rel="nofollow">https://github.com/mgechev/javascript-algorithms/blob/master/src/sorting/bubblesort.js</a>
+</p>
+</body>
+</html>
