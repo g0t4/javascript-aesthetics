@@ -27,4 +27,26 @@ describe("structure", function () {
 
     });
 
+
+    function manualCleanupFinalResultDuringRecording(){
+
+        // keeping this around to show that even manual cleanup can miss things
+
+        function timeOfDay(date){
+            if (date.getHours() < 12 && date.getHours() > 5){
+                return "Morning"
+            }
+            else if (date.getHours () < 6) {
+                return "Too Early!";
+            }
+            else if (date.getHours() < 16)  {
+                return "Afternoon";
+            }
+            else if ((date.getHours() < 20) ) {
+                return "Evening";
+            }
+            else return "Night"
+        }
+
+    }
 });
