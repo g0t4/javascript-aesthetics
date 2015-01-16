@@ -12,7 +12,7 @@
         </XML>
         <codeStyleSettings language="JavaScript">
           <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
-          <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+          <option name="KEEP_BLANK_LINES_IN_CODE" value="3" />
           <option name="ELSE_ON_NEW_LINE" value="true" />
           <option name="SPACE_BEFORE_METHOD_LBRACE" value="false" />
           <option name="SPACE_BEFORE_IF_LBRACE" value="false" />
