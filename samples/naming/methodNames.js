@@ -2,7 +2,7 @@ describe("methodNames", function () {
     "use strict";
     /*eslint no-unused-vars: 0, no-undef: 0 */
 
-    it("how about this?", function () {
+    it.skip("how about this?", function () {
 
         var p = m(args);
 
