@@ -9,12 +9,15 @@ function standardDeviation(numbers){
     }
     var mean = sum / numbers.length;
 
-    var sumOfDifferencesSquared = 0;
+    // First we compute the sum of the differences squared,
+    // so variance isn't really a variance at this point
+    var variance = 0;
     for (i = 0; i < numbers.length; i++){
         var difference = numbers[i] - mean;
-        sumOfDifferencesSquared += Math.pow(difference, 2);
+        variance += Math.pow(difference, 2);
     }
-    var variance = sumOfDifferencesSquared / numbers.length;
+    // then we divide by the number of numbers to get the variance
+    variance = variance / numbers.length;
 
     return Math.sqrt(variance);
 }
